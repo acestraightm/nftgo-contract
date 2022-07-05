@@ -1,0 +1,29 @@
+{
+  "name": "tkkr-smart-contracts",
+  "version": "1.0.0",
+  "description": "TKKR Smart Contracts",
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@openzeppelin/contracts": "^4.4.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "@truffle/hdwallet-provider": "^2.0.0",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "mocha": "^9.1.3"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "ethereum-waffle": "^3.4.0",
+    "hardhat": "^2.9.0",
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "^0.0.5",
+    "truffle-plugin-verify": "^0.5.21"
+  },
+  "scripts": {
+    "solhint": "solhint -f table contracts/**/*.sol",
+    "format:solidity": "prettier --write contracts/**/*.sol"
+  }
+}
